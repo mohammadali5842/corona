@@ -16,7 +16,7 @@ RUN -xvzf apache-tomcat-9.0.89.tar.gz
 RUN rm openjdk-11.0.2_linux-x64_bin.tar.gz
 RUN rm apache-tomcat-9.0.89.tar.gz
 
-COPY target/corona.war ${TOMCAT_HOME}/webapps/
+COPY target/corona-1.0.jar ${TOMCAT_HOME}/webapps/
 
 COPY run.sh /tmp
 RUN chmod u+x /tmp/run.sh
