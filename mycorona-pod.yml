@@ -23,9 +23,9 @@ spec:
       httpGet: 
         path: /actuator/health/liveness
         port: 8081
-      initialsDelaySeconds: 10
-      timeoutSecond: 20
-      failureThresholds: 5
+      initialDelaySeconds: 10
+      timeoutSeconds: 20
+      failureThreshold: 5
     resources:
       requests:
         cpu: "1000m"
