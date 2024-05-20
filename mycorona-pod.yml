@@ -1,0 +1,53 @@
+appVersion: v1
+kind: pod
+metadata: 
+  name: corona-pod
+spec:
+  containers: 
+  - name: corona
+    image: techsriman/corona:3.0
+    ports:
+    - portName: tomcatport
+      containerPort: 8080
+      protocol: TCP
+    redinessProb: 
+      httpGet: 8080
+        path: /actuator/health
+      initialDelaySeconds: 5
+      timeoutSeconds: 20
+      failureThresholds: 5
+    livenessProbe:
+      httpGet: 8080
+        path: /actuator/health
+      initialsDelaySeconds: 5
+      timeoutSecond: 20
+      failureSeconds: 5
+    resources:
+      request:
+        cpu: "1000m"
+        memory: "1024Mi"
+      limits: 
+        cpu: "1000m"
+        memory: "1024Mi"
+    env:
+      - name: guidelines.oxygenLevels
+        valueFrom:
+          configMapKeyRef:
+            name: guidelinesconfigmap
+            key: oxygenLevels
+
+      - name: guidelines.quarantine
+        valueFrom: 
+          configMapKeyRef:
+            name: guidelinesconfigmap
+            key: qrantine
+      - name: guidelines.liters
+        valueFrom: 
+          configMapKeyRef:
+            name: guidelinesconfig
+            key: liters 
+      - name: guidelines.temparatureLevels
+        valueFrom:
+          configMapKeyRef: 
+            name: guidelinesconfig
+            key: temparatureLevels           
