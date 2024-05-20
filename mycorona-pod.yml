@@ -8,17 +8,17 @@ spec:
     image: techsriman/corona:3.0
     ports:
     - portName: tomcatport
-      containerPort: 8080
+      containerPort: 8081
       protocol: TCP
     redinessProb: 
-      httpGet: 8080
-        path: /actuator/health
+      httpGet: 8081
+        path: /actuator/health/readiness
       initialDelaySeconds: 5
       timeoutSeconds: 20
       failureThresholds: 5
     livenessProbe:
-      httpGet: 8080
-        path: /actuator/health
+      httpGet: 8081
+        path: /actuator/health/liveness
       initialsDelaySeconds: 5
       timeoutSecond: 20
       failureSeconds: 5
