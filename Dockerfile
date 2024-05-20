@@ -1,4 +1,4 @@
-FROM openjdk-11-jdk:latest
+FROM openjdk
 
 #ENV JAVA_HOME=/u01/middleware/jdk-11.0.1
 #ENV TOMCAT_HOME=apache-tomcat-9.0.89
