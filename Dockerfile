@@ -20,4 +20,5 @@ COPY target/corona-1.0.jar ${TOMCAT_HOME}/webapps/
 
 COPY run.sh /tmp
 RUN chmod u+x /tmp/run.sh
+WORKDIR ${TOMCAT_HOME}/webapps/
 ENTRYPOINT [ "java -jar corona-1.0.jar" ]
