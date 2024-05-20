@@ -18,7 +18,7 @@ RUN apt install -y openjdk-11-jdk
 #RUN rm openjdk-11.0.1_linux-x64_bin.tar.gz
 #RUN rm apache-tomcat-9.0.89.tar.gz
 
-#COPY target/corona-1.0.jar /tmp
+COPY target/corona-1.0.jar /tmp
 
 COPY run.sh /tmp
 RUN chmod u+x /tmp/run.sh
