@@ -1,4 +1,4 @@
-FROM openjdk-11-jdk
+FROM openjdk-11-jdk:latest
 
 #ENV JAVA_HOME=/u01/middleware/jdk-11.0.1
 #ENV TOMCAT_HOME=apache-tomcat-9.0.89
@@ -16,7 +16,7 @@ WORKDIR /u01/middleware
 #RUN rm openjdk-11.0.1_linux-x64_bin.tar.gz
 #RUN rm apache-tomcat-9.0.89.tar.gz
 
-COPY target/corona-1.0.jar /u01/middleware/corona-1.0.jar
+COPY target/corona-1.0.jar /u01/middleware
 
 #COPY run.sh /tmp
 #RUN chmod u+x /tmp/run.sh
