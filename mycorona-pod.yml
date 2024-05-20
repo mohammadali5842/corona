@@ -35,7 +35,6 @@ spec:
           configMapKeyRef:
             name: guidelinesconfigmap
             key: oxygenLevels
-
       - name: guidelines.quarantine
         valueFrom: 
           configMapKeyRef:
