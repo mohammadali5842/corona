@@ -8,7 +8,7 @@ RUN mkdir -p /u01/middleware
 RUN mkdir -p /u01/apps
 WORKDIR /u01/middleware
 
-RUN https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_linux-x64_bin.tar.gz .
+ADD https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_linux-x64_bin.tar.gz .
 #RUN https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.89/bin/apache-tomcat-9.0.89.tar.gz .
 
 RUN tar -xvzf openjdk-11.0.2_linux-x64_bin.tar.gz
