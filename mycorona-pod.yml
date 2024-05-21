@@ -43,7 +43,7 @@ spec:
         valueFrom: 
           configMapKeyRef:
             name: guidelinesconfigmap
-            key: qrantine
+            key: quarantine
       - name: guidelines.liters
         valueFrom: 
           configMapKeyRef:
