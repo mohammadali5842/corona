@@ -22,4 +22,4 @@ COPY target/corona-1.0.jar .
 
 #COPY run.sh /tmp
 #RUN chmod u+x /tmp/run.sh
-ENTRYPOINT [ "bash","java -jar corona-1.0.jar" ]
+ENTRYPOINT [ "bash","java","-jar","corona-1.0.jar" ]
