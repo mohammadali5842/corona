@@ -1,4 +1,4 @@
-FROM openjdk
+FROM ubuntu:23.04
 
 ENV JAVA_HOME=/u01/middleware/jdk-11.0.2
 #ENV TOMCAT_HOME=apache-tomcat-9.0.89
