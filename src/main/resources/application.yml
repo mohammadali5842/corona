@@ -5,11 +5,11 @@ spring:
     view:
       prefix: /WEB-INF/jsp/
       suffix: .jsp
- guidelines:
-   oxygenLevels: 80
-   quarantine: 15
-   liters: 4
-   temparatureLevels: 98.9 - 101
+ #guidelines:
+  # oxygenLevels: 80
+   #quarantine: 15
+   #liters: 4
+   #temparatureLevels: 98.9 - 101
   
 management:
   endpoint:
