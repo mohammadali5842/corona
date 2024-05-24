@@ -1,5 +1,5 @@
-apiVersion: v2
-kind: configmap
+apiVersion: v1
+kind: configMap
 metadata:
   name: healthinspectorconfigmap
 data:
