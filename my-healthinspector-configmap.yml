@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: configmap
+metadata:
+  name: healthinspectorconfig
+data:
+    district-healthinspectors.properties: |
+      jamui: ck kailash
+      jhajha: raja
+      dhanbad: mohammad ali
+      niam: pintu
+      jharia: no.4

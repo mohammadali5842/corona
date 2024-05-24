@@ -53,4 +53,14 @@ spec:
         valueFrom:
           configMapKeyRef: 
             name: guidelinesconfigmap
-            key: temparatureLevels           
+            key: temparatureLevels   
+    volumeMount:
+      - name: healthinspectorvolume
+        path: "/config"
+        readOnly: true
+  volume: 
+    - name: healthinspectorvolume
+      configmap:
+        name: healthinspectorconfigmap
+          - key: src/main/java/com/tripgo/controller/HealthInspectorController.java
+            path: "src/main/java/com/tripgo/controller/HealthInspectorController.java"      
