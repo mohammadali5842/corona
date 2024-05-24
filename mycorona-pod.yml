@@ -61,6 +61,6 @@ spec:
   volume: 
     - name: healthinspectorvolume
       configmap:
-        name: healthinspectorconfigmap
-          - key: src/main/java/com/tripgo/controller/HealthInspectorController.java
-            path: "src/main/java/com/tripgo/controller/HealthInspectorController.java"      
+        name: ealthinspectorconfigmap
+          - key: district-healthinspectors.properties
+            path: "district-healthinspectors.properties"      

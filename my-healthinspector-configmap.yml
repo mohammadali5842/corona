@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: configmap
 metadata:
-  name: healthinspectorconfig
+  name: healthinspectorconfigmap
 data:
     district-healthinspectors.properties: |
       jamui: ck kailash
