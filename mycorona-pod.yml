@@ -47,10 +47,10 @@ spec:
       - name: guidelines.liters
         valueFrom: 
           configMapKeyRef:
-            name: guidelinesconfig
+            name: guidelinesconfigmap
             key: liters 
       - name: guidelines.temparatureLevels
         valueFrom:
           configMapKeyRef: 
-            name: guidelinesconfig
+            name: guidelinesconfigmap
             key: temparatureLevels           
