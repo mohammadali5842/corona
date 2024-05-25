@@ -62,5 +62,6 @@ spec:
     - name: healthinspectorvolume
       configmap:
         name: ealthinspectorconfigmap
+        items:
           - key: district-healthinspectors.properties
             path: "district-healthinspectors.properties"      
