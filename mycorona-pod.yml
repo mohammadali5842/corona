@@ -3,7 +3,7 @@ kind: Pod
 metadata: 
   name: corona-pod
   labels:
-    appName: corona
+    version: "1.0"
 spec:
   containers: 
   - name: corona
