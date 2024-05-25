@@ -63,5 +63,5 @@ spec:
       configMap:
         name: healthinspectorconfigmap
         items:
-            - key: district-healthinspectors.properties
-              path: "district-healthinspectors.properties"  
+          - key: district-healthinspectors.properties
+            path: "district-healthinspectors.properties"  
