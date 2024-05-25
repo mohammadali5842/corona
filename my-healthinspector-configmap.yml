@@ -3,9 +3,9 @@ kind: configMap
 metadata:
   name: healthinspectorconfigmap
 data:
-    district-healthinspectors.properties: |
-      jamui: ck kailash
-      jhajha: raja
-      dhanbad: mohammad ali
-      niam: pintu
-      jharia: no.4
+  district-healthinspectors.properties: |
+    jamui: ck kailash
+    jhajha: raja
+    dhanbad: mohammad ali
+    niam: pintu
+    jharia: no.4
